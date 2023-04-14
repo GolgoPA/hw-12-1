@@ -25,7 +25,7 @@
 ---
 
 employees (
-- id_employee, int, not null, auto_increment,primary_key
+- id_employee, int, not null, auto_increment, primary_key
 - last_name, varchar(50), not null
 - first_name, varchar(50), not null
 - surname, varchar(50)
