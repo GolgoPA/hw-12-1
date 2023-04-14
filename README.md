@@ -25,7 +25,7 @@
 ---
 
 employees (
-- id_employee, int, not null, primary_key
+- id_employee, int, not null, auto_increment,primary_key
 - last_name, varchar(50), not null
 - first_name, varchar(50), not null
 - surname, varchar(50)
@@ -39,7 +39,7 @@ employees (
 ---
 
 subdivisions (
-- id_subdivision, int, not null, primary_key
+- id_subdivision, int, not null, auto_increment, primary_key
 - subdivision, varchar(100), not null
 - type_of_subdivision, foreign_key
 - office, foreign_key
@@ -47,31 +47,31 @@ subdivisions (
 ---
 
 type_of_subdivision (
-- id_of_type, int, not null, primary_key
+- id_of_type, int, not null, auto_increment, primary_key
 - type
 )
 ---
 
 offices (
-- id_office, int, not null, primary_key
+- id_office, int, not null, auto_increment, primary_key
 - office, varchar(200), not null
 )
 ---
 
 projects (
-- id_project, int, not null, primary_key
+- id_project, int, not null, auto_increment, primary_key
 - project, varchar(100), not null
 )
 ---
 
 ranks (
-- id_rank, int, not null, primary_key
+- id_rank, int, not null, auto_increment, primary_key
 - rank, varchar(100), not null
 )
 ---
 
 salary (
-- id_salary, int, not null, primary_key
+- id_salary, int, not null, auto_increment, primary_key
 - salary, real, not null
 )
 ---
